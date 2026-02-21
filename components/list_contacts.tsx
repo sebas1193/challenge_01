@@ -6,27 +6,41 @@ interface Contact {
   phone: string;
 }
 
-interface Props {
-  contacts: Contact[];
-  onAdd: (name: string, phone: string) => void;
-  onDelete: (id: number) => void;
-}
+function ListContacts() {
+  const [contacts, setContacts] = useState<Contact[]>([
+    { id: 1, name: "Juan", phone: "123456" },
+    { id: 2, name: "Maria", phone: "987654" },
+  ]);
 
-function ListContacts({ contacts, onAdd, onDelete }: Props) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
   const handleAdd = () => {
     if (name === "" || phone === "") return;
 
-    onAdd(name, phone);
+    const newContact: Contact = {
+      id: Date.now(),
+      name: name,
+      phone: phone,
+    };
+
+    setContacts([...contacts, newContact]);
     setName("");
     setPhone("");
+  };
+
+  const handleDelete = (id: number) => {
+    const updated = contacts.filter((contact) => contact.id !== id);
+    setContacts(updated);
   };
 
   return (
     <div>
       <h2>Lista de Contactos</h2>
+
+      <img src="/img1.png" alt="imagen principal" width={200} />
+
+      <br />
 
       <input
         type="text"
@@ -48,9 +62,7 @@ function ListContacts({ contacts, onAdd, onDelete }: Props) {
         {contacts.map((contact) => (
           <li key={contact.id}>
             {contact.name} - {contact.phone}
-            <button onClick={() => onDelete(contact.id)}>
-              Eliminar
-            </button>
+            <button onClick={() => handleDelete(contact.id)}>Eliminar</button>
           </li>
         ))}
       </ul>
