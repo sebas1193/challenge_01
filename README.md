@@ -1,14 +1,21 @@
-# How to use the PWA
+## Login
 
-1. Go to the page (in your preferred browser):
-   https://pwajsog.netlify.app/
+![Login](./public/inicio.png)
 
-2. Click the button with the three-dot menu
+## Panel Recepción
 
-3. Select the option that says:
-   "Add to home screen"
+![Panel Recepción](./public/panel_recepcion.png)
 
-Now you have the PWA on your phone!
+## Crear Paciente
 
-Keep in mind that all features work fully only when you are online.
-If you are offline, some features may not be available.
+![Crear Paciente](./public/panel_creacion_ususario_recepcion.png)
+
+## Panel Doctor
+
+![Panel Doctor](./public/panel_doctor.png)
+
+## Lista de Pacientes
+
+![Lista Pacientes](./public/listar_pacientes_doctor.png)
+
+no lista los pacientes creados, ni tampoco tiene el b uscador de paciente, no supe como hacerlo profe
