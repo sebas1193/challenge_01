@@ -1,8 +1,9 @@
 {
-  "name": "Mi Primera PWA",
-  "short_name": "MiPWA",
+  "name": "MediCare+ Admin",
+  "short_name": "MediCare",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0d6efd"
+  "theme_color": "#0C2340",
+  "background_color": "#FFFFFF"
+  
 }
