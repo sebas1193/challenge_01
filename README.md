@@ -8,7 +8,7 @@
 
 ## Crear Paciente
 
-![Crear Paciente](./public/panel_creacion_ususario_recepcion.png)
+![Crear Paciente](./public/panel_creacion_ususuario_recepcion.png)
 
 ## Panel Doctor
 
