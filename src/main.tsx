@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Loader from "../components/loader";
-import ListContacts from "../components/list_contacts";
+import Loader from "./components/loader";
+import ListContacts from "./components/list_contacts";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
